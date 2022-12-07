@@ -1,20 +1,14 @@
 :root {
   --primary-color: #0a1118;
-  --primary-color-highlight: #233d54;
-  --bs-body-bg: #fbf0f6;
-  --bs-body-font-family: "Montserrat", sans-serif;
+  --primary-color-highlight: #233D54;
+  --bs-body-bg: #FBF0F6;
+  --bs-body-font-family: 'Montserrat', sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html {scroll-behavior: smooth;}
 
-a {
-  color: var(--primary-color);
-}
-a:hover {
-  color: var(--primary-color);
-}
+a { color: var(--primary-color); }
+a:hover { color: var(--primary-color); }
 
 /* width */
 ::-webkit-scrollbar {
@@ -23,18 +17,19 @@ a:hover {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f1f1f1; 
 }
-
+ 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--bs-dark);
+  background: var(--bs-dark); 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #555; 
 }
+
 
 /* 
   @media (min-width: 544px)  {}
@@ -55,21 +50,15 @@ a:hover {
 }
 
 @media (min-width: 1200px) {
-  .container-custom {
-    width: 1140px;
-  }
+  .container-custom { width: 1140px; }
 }
 
 @media (min-width: 1400px) {
-  .container-custom {
-    width: 1340px;
-  }
+  .container-custom { width: 1340px; }
 }
 
 @media (min-width: 1600px) {
-  .container-custom {
-    width: 1520px;
-  }
+  .container-custom { width: 1520px; }
 }
 
 /*
@@ -88,7 +77,7 @@ a:hover {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: rgb(255, 247, 231);
+  background-color: rgb(255,247,231);
   z-index: 4;
 }
 
@@ -96,7 +85,7 @@ a:hover {
   position: absolute;
   top: 20px;
   right: 16px;
-  background-color: rgbA(255, 255, 255, 0.6);
+  background-color: rgbA(255,255,255,0.6);
 }
 
 .dropdown-nav__container {
@@ -116,13 +105,13 @@ a:hover {
 
 @media (min-width: 1400px) {
   .hero__heading {
-    font-size: 3.2rem;
+      font-size: 3.2rem;
   }
 }
 
 .hero__video {
   position: absolute;
-  top: 50%;
+  top:50%;
   left: 50%;
   min-width: 100%;
   min-height: 100%;
@@ -173,6 +162,7 @@ a:hover {
   animation: bounce 1s infinite alternate;
 }
 
+ 
 @keyframes bounce {
   from {
     transform: translateY(0px);
@@ -181,6 +171,7 @@ a:hover {
     transform: translateY(-10px);
   }
 }
+
 
 /*
 * Steps Section
@@ -202,7 +193,7 @@ a:hover {
 }
 
 .steps--background {
-  background-color: #fef8f9;
+  background-color: #FEF8F9;
 }
 
 @media (min-width: 544px) {
@@ -215,6 +206,7 @@ a:hover {
     height: auto;
   }
 }
+
 
 /*
 * Footer
