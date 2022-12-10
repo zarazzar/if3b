@@ -1,0 +1,31 @@
+{
+  "name": "uas-web-1",
+  "version": "1.0.0",
+  "description": "rest api project",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zarazzar/if3b.git"
+  },
+  "keywords": [
+    "nodejs",
+    "express",
+    "mongodb"
+  ],
+  "author": "azzar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zarazzar/if3b/issues"
+  },
+  "homepage": "https://github.com/zarazzar/if3b#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0",
+    "nodemon": "^2.0.20"
+  }
+}
