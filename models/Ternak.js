@@ -7,7 +7,11 @@ const TernakSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  alamat: {
+  judul: {
+    type: String,
+    required: true,
+  },
+  konten: {
     type: String,
     required: true,
   },

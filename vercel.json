@@ -1,0 +1,6 @@
+{
+  "version": 2,
+  "name": "ternak",
+  "builds": [{ "src": "app.js", "use": "@vercel/node" }],
+  "routes": [{ "src": "/(.*)", "dest": "/app.js" }]
+}

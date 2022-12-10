@@ -8,7 +8,8 @@ router.post("/", async (req, res) => {
   // tampung input
   const ternakPost = new Ternak({
     nama: req.body.nama,
-    alamat: req.body.alamat,
+    judul: req.body.judul,
+    konten: req.body.konten,
   });
 
   try {
@@ -36,7 +37,8 @@ router.put("/:ternakId", async (req, res) => {
   // tampung input mahasiswa
   const data = {
     nama: req.body.nama,
-    alamat: req.body.alamat,
+    judul: req.body.judul,
+    konten: req.body.konten,
   };
 
   try {
