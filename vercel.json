@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "ternak",
+  "name": "TernakSignature",
   "builds": [{ "src": "app.js", "use": "@vercel/node" }],
   "routes": [{ "src": "/(.*)", "dest": "/app.js" }]
 }
