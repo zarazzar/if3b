@@ -3,7 +3,10 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const cors = require("cors"); //cors policy
 require("dotenv/config");
+
+app.use(cors());
 
 // (6) middleware body-parser
 app.use(
