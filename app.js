@@ -18,13 +18,14 @@ app.use(bodyParser.json());
 
 // (7) import routes
 const ternakRoutes = require("./routes/ternak");
+const storeRoutes = require("./routes/store");
 
 // (8) app.use (mendaftarkan middleware baru ke Express)
 app.use("/ternak", ternakRoutes);
+app.use("/store", storeRoutes);
 
 // (3) koneksi ke database mongodb
 mongoose.set("strictQuery", true);
-
 mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true, useUnifiedTopology: true });
 let db = mongoose.connection;
 

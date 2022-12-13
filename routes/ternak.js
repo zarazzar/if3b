@@ -1,4 +1,4 @@
-// (5) Buat router Mahasiswa
+// (5) Buat router terns\ak
 const express = require("express");
 const router = express.Router();
 const Ternak = require("../models/Ternak");
@@ -34,7 +34,7 @@ router.get("/", async (req, res) => {
 
 // Update
 router.put("/:ternakId", async (req, res) => {
-  // tampung input mahasiswa
+  // tampung input kontent
   const data = {
     nama: req.body.nama,
     judul: req.body.judul,
