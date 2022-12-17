@@ -3,14 +3,17 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import HelloComponent from "./component/HelloComponent";
-import StateFullComponent from "./container/StateFullComponent";
-import YouTubeComp from "./component/YouTubeComp/YouTubeComp";
+import "bootstrap/dist/css/bootstrap.css";
+// import HelloComponent from "./component/HelloComponent";
+// import StateFullComponent from "./container/StateFullComponent";
+// import YouTubeComp from "./component/YouTubeComp/YouTubeComp";
+// import KontenPost from "./container/KontenPost";
+import Home from "./Home/Home";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 //root.render(<HelloComponent />);
 //root.render(<StateFullComponent />);
-root.render(<YouTubeComp />);
+root.render(<Home />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
