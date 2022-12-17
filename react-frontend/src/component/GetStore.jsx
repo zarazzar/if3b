@@ -1,6 +1,6 @@
 import React from "react";
 
-const StorePost = (props) => {
+const GetStore = (props) => {
   return (
     <div className="storeAPI container-fluid">
       <div className="card mb-3">
@@ -20,4 +20,4 @@ const StorePost = (props) => {
   );
 };
 
-export default StorePost;
+export default GetStore;

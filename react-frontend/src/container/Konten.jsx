@@ -1,15 +1,15 @@
 import axios from "axios";
 import React, { Component, Fragment } from "react";
-import GetStore from "../component/GetStore";
+import GetKonten from "../component/GetKonten";
 
-class Store extends Component {
+class Konten extends Component {
   state = {
     get: [],
   };
 
   componentDidMount() {
     //pake axios
-    axios.get("https://if3b-zarazzar.vercel.app/store").then((result) => {
+    axios.get("https://if3b-zarazzar.vercel.app/ternak").then((result) => {
       this.setState({
         get: result.data,
       });
@@ -20,11 +20,11 @@ class Store extends Component {
     return (
       <Fragment>
         {this.state.get.map((get) => {
-          return <GetStore key={get._id} imgThumb={get.urlFoto} produk={get.namaBarang} harga={get.harga} deskripsi={get.deskripsi} noHp={get.nomorHP} />;
+          return <GetKonten key={get._id} imgThumb={get.urlFoto} produk={get.namaBarang} harga={get.harga} deskripsi={get.deskripsi} noHp={get.nomorHP} />;
         })}
       </Fragment>
     );
   }
 }
 
-export default Store;
+export default Konten;
