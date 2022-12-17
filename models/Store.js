@@ -19,7 +19,7 @@ const StoreSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  urlLokasi: {
+  urlFoto: {
     type: String,
     required: true,
   },

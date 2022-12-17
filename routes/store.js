@@ -11,7 +11,7 @@ router.post("/", async (req, res) => {
     harga: req.body.harga,
     deskripsi: req.body.deskripsi,
     nomorHP: req.body.nomorHP,
-    urlLokasi: req.body.urlLokasi,
+    urlFoto: req.body.urlFoto,
   });
 
   try {
@@ -42,7 +42,7 @@ router.put("/:storeId", async (req, res) => {
     harga: req.body.harga,
     deskripsi: req.body.deskripsi,
     nomorHP: req.body.nomorHP,
-    urlLokasi: req.body.urlLokasi,
+    urlFoto: req.body.urlFoto,
   };
 
   try {
