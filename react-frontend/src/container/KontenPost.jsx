@@ -5,6 +5,7 @@ import GetKonten from "../component/GetKonten";
 class Konten extends Component {
   state = {
     get: [],
+    formKonten: {},
   };
 
   componentDidMount() {
@@ -19,6 +20,16 @@ class Konten extends Component {
   render() {
     return (
       <Fragment>
+        <div className="form-add-post">
+          <form>
+            <div class="mb-3">
+              <label htmlFor="NamaPeternakan" class="form-label">
+                Nama Peternakan
+              </label>
+              <input type="text" className="form-control" name="nama" id="exampleInputEmail1" />
+            </div>
+          </form>
+        </div>
         {this.state.get.map((get) => {
           return <GetKonten key={get._id} nama={get.nama} postTime={get.createdAt} judul={get.judul} konten={get.konten} />;
         })}
@@ -27,4 +38,4 @@ class Konten extends Component {
   }
 }
 
-export default Konten;
+export default KontenPost;

@@ -1,13 +1,13 @@
 import "./App.css";
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Youtube from "./component/YouTubeComp";
+import Konten from "./component/GetKonten";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<Youtube />} />
+        <Route path="/home" element={<Konten />} />
       </Routes>
     </BrowserRouter>
   );
