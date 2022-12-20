@@ -2,7 +2,7 @@ import React from "react";
 
 const GetKonten = (props) => {
   return (
-    <div className="kontenAPI container-fluid">
+    <div className="kontenAPI container-fluid mb-3">
       <div className="card">
         <div className="card-body">
           <h4 className="nama card-title text-primary">{props.nama}</h4>
