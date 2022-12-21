@@ -5,6 +5,7 @@ import KontenPost from "../container/KontenPost";
 import StorePost from "../container/StorePost";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "../pages/LandingPage";
+import NavbarComp from "../pages/NavbarComp";
 
 class Home extends Component {
 
@@ -28,6 +29,8 @@ state = {
       <Routes>
         <Route path="/" element={<LandingPage/>}/>
         <Route path="/store" element={<StorePost/>}/>
+        <Route path="/navbar" element={<NavbarComp/>}/>
+        
       </Routes>
       
 
