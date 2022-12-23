@@ -32,6 +32,17 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/:ternakId", async (req, res) => {
+  try {
+    const ternak = await Ternak.findOne({
+      _id:req.params.ternakId
+    });
+    res.json(ternak);
+  } catch (error) {
+    res.json({ message: error });
+  }
+});
+
 // Update
 router.put("/:ternakId", async (req, res) => {
   // tampung input kontent
