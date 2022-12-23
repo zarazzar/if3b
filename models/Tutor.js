@@ -1,17 +1,21 @@
 // (4) Buat Schema 
 const mongoose = require("mongoose");
 
-const TernakSchema = mongoose.Schema({
+const TutorSchema = mongoose.Schema({
   // Buat Schema data
-  nama: {
-    type: String,
-    required: true,
-  },
   judul: {
     type: String,
     required: true,
   },
-  konten: {
+  deskripsi: {
+    type: String,
+    required: true,
+  },
+  urlGambar: {
+    type: String,
+    required: true,
+  },
+  urlKonten: {
     type: String,
     required: true,
   },
@@ -21,4 +25,4 @@ const TernakSchema = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Ternak", TernakSchema);
+module.exports = mongoose.model("Tutor", TutorSchema);

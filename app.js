@@ -19,10 +19,12 @@ app.use(bodyParser.json());
 // (7) import routes
 const ternakRoutes = require("./routes/ternak");
 const storeRoutes = require("./routes/store");
+const tutorRoutes = require("./routes/tutor")
 
 // (8) app.use (mendaftarkan middleware baru ke Express)
 app.use("/ternak", ternakRoutes);
 app.use("/store", storeRoutes);
+app.use("/tutor", tutorRoutes)
 
 // (3) koneksi ke database mongodb
 mongoose.set("strictQuery", true);
