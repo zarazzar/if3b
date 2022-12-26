@@ -1,3 +1,6 @@
 .card {
-  max-width: 540px;
+  max-width: 100%;
+}
+.body{
+  background-color: aquamarine;
 }

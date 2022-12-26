@@ -7,9 +7,12 @@ import "bootstrap/dist/js/bootstrap.min.js";
 
 
 
+
+
 const LandingPage = ()=> {
     return(
          <div>
+
                 
             <header className="header p-3 position-absolute start-0 top-0 end-0">
             <div className="d-flex justify-content-between align-items-center">
@@ -31,7 +34,7 @@ const LandingPage = ()=> {
                         <div className="text-white">
                             <h1 className="hero__heading fw-bold mb-4">Jadilah Peternak Millenial yang haus akan Ilmu.</h1>
                             <p className="lead mb-4">Website ini dibuat untuk mempermudah para peterenak dalam mengelola ternaknya.</p>
-                            <a href="/web/public/in" className="mt-2 btn btn-lg btn-outline-light" role="button">MULAI</a>
+                            <a href="/" className="mt-2 btn btn-lg btn-outline-light" role="button">MULAI</a>
                         </div>
                         </div>
                     </div>
