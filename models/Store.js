@@ -1,4 +1,4 @@
-// (4) Buat Schema Mahasiswa
+// (4) Buat Schema Store untuk halaman Toko
 const mongoose = require("mongoose");
 
 const StoreSchema = mongoose.Schema({

@@ -1,4 +1,4 @@
-// (4) Buat Schema 
+// (4) Buat Schema ternak untuk halaman Aktifitas
 const mongoose = require("mongoose");
 
 const TernakSchema = mongoose.Schema({

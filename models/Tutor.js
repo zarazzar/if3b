@@ -1,4 +1,4 @@
-// (4) Buat Schema 
+// (4) Buat Schema  Ternak untuk halaman Beranda
 const mongoose = require("mongoose");
 
 const TutorSchema = mongoose.Schema({

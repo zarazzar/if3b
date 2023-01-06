@@ -3,7 +3,7 @@ const express = require("express");
 const router = express.Router();
 const Ternak = require("../models/Ternak");
 
-// Create
+// ini method Create untuk buat data Api ke website mongoDb
 router.post("/", async (req, res) => {
   // tampung input
   const ternakPost = new Ternak({
