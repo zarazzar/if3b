@@ -18,12 +18,12 @@ app.use(bodyParser.json());
 // (7) import routes (Masuki kodingan yang ado di routes ke dalam app.js)
 const ternakRoutes = require("./routes/ternak");
 const storeRoutes = require("./routes/store");
-const tutorRoutes = require("./routes/tutor")
+const berandaRoutes = require("./routes/beranda")
 
 // (8) app.use (mendaftarkan middleware baru ke Express)
 app.use("/ternak", ternakRoutes);
 app.use("/store", storeRoutes); //ini bawaan biar kodingan2 tdi dibaco pas "npm run dev"
-app.use("/tutor", tutorRoutes)
+app.use("/beranda", berandaRoutes)
 
 // (3) koneksi ke database mongodb
 mongoose.set("strictQuery", true);

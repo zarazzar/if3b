@@ -1,7 +1,7 @@
 // (4) Buat Schema  Ternak untuk halaman Beranda
 const mongoose = require("mongoose");
 
-const TutorSchema = mongoose.Schema({
+const BerandaSchema = mongoose.Schema({
   // Buat Schema data
   judul: {
     type: String,
@@ -25,4 +25,4 @@ const TutorSchema = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.model("Tutor", TutorSchema);
+module.exports = mongoose.model("Beranda", BerandaSchema);
